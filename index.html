@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Jyanti Solar</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/jyanti/logo-jyanti-removebg-preview.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardd {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+   }
+   
+   .cardd-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   .cards .cardd img{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: .3s;
+   }
+   .cards .cardd img:hover{
+transform: translateY(-40px);
+   }
+   .cardd-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /Text/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /Hover/
+   .cardd:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .cardd:hover .cardd-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+@media (max-width:1400px) {
+    .cardd{
+        width: 260px;
+    }
+}
+@media (max-width:1200px) {
+    .cardd{
+        width: 220px;
+        height: 450px;
+    }
+}
+@media (max-width:993px) {
+    .cardd{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* hhh */
+        .mhead{
+    display: flex;
+    flex-direction: column;
+
+}
+.mhead img{
+    width: 100%;
+    
+}
+.mhead .bc{
+    position: relative;
+    bottom: 355px;
+    left: 13px;
+}
+.mhead .bc1{
+    position: relative;
+    bottom: 510px;
+    left: 13px;
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+  
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center  px-4 px-lg-5">
+            <div class=" logo-img ">
+                <img width="100%" src="img/jyanti/logo-jyanti-removebg-preview.png" alt="">
+            </div>
+            <!-- <h2 class="m-0 text-primary"> Jyanti Solar</h2> -->
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="subsidy.html" class="nav-item nav-link">Subsidy</a>
+                <a href="channel.html" class="nav-item nav-link"> Channel Partner</a>
+                <div class="nav-item dropdown">
+                    <a href="product.html" class="nav-link dropdown-toggle" >Products</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="on.html" class="dropdown-item">On Grid Solar Power Plant</a>
+                        <a href="off.html" class="dropdown-item">Off Grid Solar Power Plant</a>
+                        <a href="hybrid.html" class="dropdown-item">Hybrid  Solar Power Plant</a>
+                       
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+
+            <a href="form.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/jyanti/one.jpeg'>">
+                <img width="100%" class="img-fluid" src="img/jyanti/one.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+
+                            <!-- <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div> -->
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/jyanti/two.jpeg'>">
+                <img class="img-fluid" src="img/jyanti/two.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <!-- <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/jyanti/three.jpeg'>">
+                <img class="img-fluid" src="img/jyanti/three.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <!-- <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/jyanti/four.jpeg'>">
+                <img class="img-fluid" src="img/jyanti/four.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+   
+
+
+ 
+
+
+    <!-- Service Start -->
+
+    <div class="container-xxl pt-3 pb-4 " style="background-color: aliceblue; margin-top: -43px;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Product Range</h5>
+                <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Panels</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Wind Turbines</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Hydropower Plants</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Panels</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Wind Turbines</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Hydropower Plants</h4>
+                            <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+
+    <div class="container-fluid  overflow-hidden my-1 py-4 px-lg-0" style="background-color:aliceblue;">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <h6 class="text-primary">Why Choose Us!</h6>
+                        <h1 class="mb-4">Complete Commercial & Residential Solar Systems</h1>
+
+                        
+                         
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p  class="mb-0">Quality</p>
+                                        <h5 class="mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-user-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Expert</p>
+                                        <h5 class="mb-0">Workers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-drafting-compass text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Free</p>
+                                        <h5 class="mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-headphones text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Customer</p>
+                                        <h5 class="mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100 me-2">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature End -->
+
+         <!--first  card section  -->
+
+    <div class="carddesign pt-3" style="background-color: aliceblue;">
+        <h3 class="text-center py-3 mx-5" style=" color: white; border-radius: 10px;  background-color: #5b42f3; "> Why Solar?  Go Green Go Solar </h3>
+        <div class="containerr">
+                
+            <div class="row w-100 ">
+                <div class="col-lg-4 ">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor"
+                                    d="M12 2C12 2 5 9 5 14C5 17.866 8.13401 21 12 21C15.866 21 19 17.866 19 14C19 9 12 2 12 2ZM12 19C9.23858 19 7 16.7614 7 14C7 10.9346 10.1805 6.95817 12 5.04761C13.8195 6.95817 17 10.9346 17 14C17 16.7614 14.7614 19 12 19ZM12 11.5C11.1716 11.5 10.5 12.1716 10.5 13C10.5 13.8284 11.1716 14.5 12 14.5C12.8284 14.5 13.5 13.8284 13.5 13C13.5 12.1716 12.8284 11.5 12 11.5Z">
+                                </path>
+                            </svg>
+                            <br>
+                            Save & Earn Money
+                            <br>
+                            <div class="name">Solar Power Systems help reduce electricity bill upto 90% & offer other
+                                financial benefits. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M13 2L4 14H11V22L20 10H13V2Z"></path>
+                            </svg>
+
+                            <br>
+                            Free Power
+                            <br>
+                            <div class="name">Solar panels have 25+ year life. With payback of investment in 2-4 years,
+                                enjoy free power for 20+ yrs.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor"
+                                    d="M10 2v2H6.21a8 8 0 1 1-1.42 8H6a6 6 0 1 0 0-4h4v2L14 5 10 2ZM14 15h4v2h-4v3l-4-3 4-3v3Z" />
+                            </svg>
+
+                            <br>
+                            Highest Returns
+                            <br>
+                            <div class="name">Investment in Solar Plants is risk free, safe and delivers highest ROI in
+                                assured asset class.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor"
+                                    d="M12 2a1 1 0 0 1 1 1v2.07a7.003 7.003 0 0 1 4.9 4.9H20a1 1 0 1 1 0 2h-2.07a7.003 7.003 0 0 1-4.9 4.9V20a1 1 0 1 1-2 0v-2.07a7.003 7.003 0 0 1-4.9-4.9H4a1 1 0 1 1 0-2h2.07a7.003 7.003 0 0 1 4.9-4.9V4a1 1 0 0 1 1-1Zm0 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 1 1 0-2h1V9a1 1 0 0 1 1-1Z" />
+                            </svg>
+                            <br>
+                            Increasing Power Cost
+                            <br>
+                            <div class="name">Investment in solar system today will save you from ever increasing costs
+                                of power. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor"
+                                    d="M12 2C7 2 3 6 3 11c0 5 4 9 9 9s9-4 9-9c0-5-4-9-9-9Zm-.88 15.88c-2.55-.67-4.38-2.48-5.03-4.93C8.37 13.5 10.04 14 12 14c1.96 0 3.63-.5 5.91-2.05-.65 2.45-2.48 4.26-5.03 4.93a7.02 7.02 0 0 1-1.76.36Z" />
+                            </svg>
+
+                            <br>
+                            Environment Friendly
+                            <br>
+                            <div class="name">Solar power is clean, helps reduce pollution, & carbon footrpint. Helps
+                                build a sustainable future.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+
+
+                        <div class="infotop">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path>
+                            </svg><br>
+                            Improve Asset Value
+                            <br>
+                            <div class="name">Solar Power Systems improve the attractiveness of the asset both for
+                                rentals & sale.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- first end  -->
+
+    <!-- seconde section -->
+
+    <div class="solution" style="background-color: aliceblue;">
+        <div class="container">
+            <h2 class=" text-center">Our Solutions</h2>
+            <div class="row">
+                <h3 class=" text-center" style="color: rgb(85, 15, 15);" >On Grid Solar Power Plant</h3>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                    <img class=" text-center" src="img/img1.jpeg" alt="a">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="content">
+                        <p>✤ Low Cost</p>
+                        <p>✤ Zero Maintenance</p>
+                        <p>✤ No battery needed</p>
+                        <p>✤ Works in sync with Grid</p>
+                        <p>✤ Govt.Subsidy in Punjab & other states</p>
+                        <p>✤ 5 Year Warranty on complete system</p>
+                        <p>✤ 25 years warranty on Solar Panels</p>
+                        <p>✤ 24×7 support</p>
+                        <p>✤ Call us for more details</p>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <h3 class=" text-center" style="color: rgb(85, 15, 15);">Off Grid Solar Power Plant
+                </h3>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="content">
+                        <p>✤ High Cost</p>
+                        <p>✤ Needs Maintenance</p>
+                        <p>✤ Battery system needed</p>
+                        <p>✤ Works without grid</p>
+                        <p>✤ No Govt. Subsidy in Punjab & other states</p>
+                        <p>✤ 25 years warranty on Solar Panels</p>
+                        <p>✤ 5 Year warranty on solar batteries</p>
+                        <p>✤ 24×7 support</p>
+                        <p>✤ Call us for more details</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                    <img class=" text-center" src="img/img2.jpg" alt="w">
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <h3 class=" text-center" style="color: rgb(85, 15, 15);">Hybrid Solar Power Plant</h3>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                    <img class=" text-center" src="img/img3.jpeg" alt="h">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="content">
+                        <p>✤ High Cost</p>
+                        <p>✤ Needs Maintenance</p>
+                        <p>✤ Battery system needed</p>
+                        <p>✤ Works without grid</p>
+                        <p>✤ No Govt. Subsidy in Punjab & other states</p>
+                        <p>✤ 25 years warranty on Solar Panels</p>
+                        <p>✤ 5 Year warranty on solar batteries</p>
+                        <p>✤ 24×7 support</p>
+                        <p>✤ Call us for more details</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- second end  -->
+
+        <!-- card design pop start  -->
+
+        <div>
+            <div class="cards py-5">
+                <div class="container">
+                    <h1 class="text-center py-1 " >Our Product Range</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                            <div class="cardd">
+                                <div class="cardd-details">
+                                    <img src="img/imgg1.jpeg" alt="">
+                                    <p class="text-title">Grid conected solar system</p>
+                                    <p class="text-body">Green solar energy can be used to generate electricity without harming
+                                        the environment.</p>
+                                </div>
+                                <button type="button" class="cardd-button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    more info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                            <div class="cardd">
+                                <div class="cardd-details">
+                                    <img src="img/imgg22.jpg" alt="">
+                                    <p class="text-title">battry based solar system</p>
+                                    <p class="text-body">A solar battery system can store energy during the day and provide it
+                                        at night. </p>
+                                </div>
+                                <button type="button" class="cardd-button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdropp">
+                                    more info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                            <div class="cardd">
+                                <div class="cardd-details">
+                                    <img src="img/imgg3.avif" alt="">
+                                    <p class="text-title">Micro Inverter solar system</p>
+                                    <p class="text-body">Micro inverters are connected to each solar panel, allowing each panel
+                                        to operate.</p>
+                                </div>
+                                <button type="button" class="cardd-button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdroppp">
+                                    more info
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                            <div class="cardd">
+                                <div class="cardd-details">
+                                    <img src="img/imgg4.jpeg" alt="">
+                                    <p class="text-title">Tree Based solar system</p>
+                                    <p class="text-body">Solar trees generate clean, sustainable energy that reduces greenhouse
+                                        gas emissions.</p>
+                                </div>
+                                <button type="button" class="cardd-button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdropppp">
+                                    more info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header mhead">
+                                <img src="img/imgg1.jpeg" alt="">
+                                <h5 class="modal-title" id="staticBackdropLabel">Grid conected solar system</h5>
+                                <button type="button" class="btn-close bc" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Renewable energy: Solar trees generate clean, sustainable energy that reduces the need for
+                                    fossil fuels and greenhouse gas emissions. </p>
+                                <p>Space-saving: Solar trees take up less space than traditional solar panels.</p>
+                                <p>Energy production: Solar trees can generate between 17,500 to 21,000 kWh of energy per year.
+                                </p>
+                                <p>Carbon emissions: Each solar tree can save about 14 to 18 tons of carbon emissions annually.
+                                </p>
+                                <p>Shade: Solar trees provide shade, making them ideal for parks, public spaces, and outdoor
+                                    events. </p>
+                                <p>Efficiency: Solar trees can be up to 15% more efficient than flat solar panels.
+                                </p>
+                                <p>Design: Solar trees are designed to help people in a variety of settings, both urban and
+                                    natural.</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="modal fade" id="staticBackdropp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header mhead">
+                                <img src="img/imgg22.jpg" alt="">
+                                <h5 class="modal-title" id="staticBackdropLabel">Battery Based Solar system</h5>
+                                <button type="button" class="btn-close bc1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+        
+                                <p>Best suited for areas with grid outage/reliability problems, for homes and small
+                                    commercial, industrial &amp; institutional set-ups</p>
+        
+        
+                                <p>Off-grid: Power critical lighting loads, without grid export functionality</p>
+        
+        
+                                <p>Hybrid: Power heavy load, export excess generation to grid &amp; can also complement DG
+                                    sets</p>
+        
+        
+                                <p>Product range upto 10kW</p>
+        
+        
+                                <p>High efficiency mono crystalline solar panels</p>
+        
+        
+                                <p>Multicolour LCD display on inverter to monitor system performance; and intelligent
+                                    hardware enabling different power saving levels</p>
+        
+        
+                                <p>Tata Power full system warranty support for 5 years</p>
+        
+                            </div>
+                            <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd -->
+                <div class="modal fade" id="staticBackdroppp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header mhead">
+                                <img src="img/imgg3.avif" alt="">
+                                <h5 class="modal-title" id="staticBackdropLabel">Micro Inverter Based Grid connected system</h5>
+                                <button type="button" class="btn-close bc1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+        
+                                <p>Uses advanced micro-inverter technology instead of string inverters used regularly in
+                                    grid connected solar rooftop</p>
+        
+        
+                                <p>Advanced solar technology with compact design, higher generation &amp; increased savings
+                                </p>
+        
+        
+                                <p>Suitable for roofs having orientation challenge as well shading due to trees/building
+                                    etc.</p>
+        
+        
+                                <p>1 microinverter per solar panel - Allows module level monitoring with no single point of
+                                    failure </p>
+        
+        
+                                <p>Electrical safety - No aggregation of high voltage Direct Current on the roof</p>
+        
+        
+                                <p>Tata Power full system warranty support for 5 years, higher inverter warranty of 10+
+                                    years, extended warranty options available</p>
+        
+                            </div>
+                            <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th -->
+                <div class="modal fade" id="staticBackdropppp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header mhead">
+                                <img src="img/imgg4.jpeg" alt="">
+                                <h5 class="modal-title" id="staticBackdropLabel">Solar tree</h5>
+                                <button type="button" class="btn-close bc1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+        
+                                <p>Compact and aesthetic solar solution for space-constraint/open areas</p>
+        
+                                <p>Suitable for Villas, Industries (Lawns), Housing societies, schools, resorts etc.</p>
+        
+                                <p>Available in 10 to 16 module variants</p>
+        
+                                <p>2meters + distance from ground</p>
+        
+                                <p>Tata Power full system warranty support for 5 years, extended warranty options available
+                                </p>
+        
+                            </div>
+                            <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- card design pop end  -->
+
+
+    <!-- Projects Start -->
+
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Our Projects</h6>
+                <h1 class="mb-4">Visit Our Latest Solar And Renewable Energy Projects</h1>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".first">Solar Panels</li>
+                        <li class="mx-2" data-filter=".second">Wind Turbines</li>
+                        <li class="mx-2" data-filter=".third">Hydropower Plants</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Solar Panels</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Wind Turbines</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Hydropower Plants</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Solar Panels</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Wind Turbines</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Hydropower Plants</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Projects End -->
+
+
+    <!-- Quote Start -->
+
+    <div class="container-fluid  overflow-hidden  px-lg-0" style="background-color: aliceblue;">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 200px;">
+                    <div class="position-relative ms-3 h-100">
+                        <img width="100%" class="position-absolute img-fluid w-100 h-100" src="img/jyanti/panel-2562239_640-1.jpg" style="object-fit: contain;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-1 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <!-- <h6 class="text-primary">Free Quote</h6> -->
+                        <h1 class="mb-4">Who We Are ?</h1>
+                        <p class="mb-4 pb-2" style="color:rgb(68, 15, 15);"> 
+                            Jyanti Enterprises is a Solar Energy Company with a vision to deliver advanced, transformative clean energy solutions which help save money and make the future sustainable.
+                            <br> <br>
+We strongly believe roof top Solar Power Plants offer tremendous opportunity to our customers to not only earn/save money but also to contribute in making the environment healthy by reducing the carbon footprint.
+<br> <br>
+Jyanti Enterprises offers industry leading Solar Power Plants / Solar Energy Systems adhering to MNRE, SNA & IEC specifications, using the best technology, software tools & top reputed tier 1 makes of Solar Panels & other solar equipments.
+<br>
+Lets talk and together make a sustainable impact !
+                        </p>
+                       
+                        <!-- <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form> -->
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote End -->
+    <!-- video Start -->
+
+    <div class="container-fluid py-3" style="background-color: aliceblue;">
+        <div class="container">
+                <h2 class="text-center"> Learn how</h2>
+                <h4 class="text-center" > our Solaroof Solutions have made a
+                    difference to prominent landmarks</h4>
+            <div class="row">
+                <div class="ratio ratio-16x9">
+                    <video controls autoplay muted>
+                      <source src="img/jyanti/video-solar.mp4"  type="video/mp4">
+                     
+                    </video>
+                  </div>
+            </div>
+              
+        </div>
+    </div>
+
+    <!-- video End -->
+
+
+         <!-- img section -->
+
+    <div class="img-part py-5 " style="background-color: aliceblue;">
+        <div class="container">
+            <h2 class="text-center">Served Markets</h2>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 imgg">
+                    <h3>Residential</h3>
+                    <img src="img/Residential-1.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-12 imgg">
+                    <h3>Industrial</h3>
+                    <img src="img/Industrial-1.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-12 imgg">
+                    <h3>Commercial</h3>
+                    <img src="img/Commercial-1-1.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- img section end  -->
+
+
+
+
+
+    <!-- Testimonial Start -->
+
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Testimonial</h6>
+                <h1 class="mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Testimonial End -->
+
+
+     <!-- Footer Start -->
+
+     <div class="container-fluid  text-body footer  pt-1 wow fadeIn" style="background: linear-gradient(168deg,rgb(248, 228, 228),rgb(127, 127, 165),rgb(116, 101, 101));" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="h-75 w-75">
+                        <img width="100%" src="img/jyanti/logo-jyanti-removebg-preview.png" alt="">
+                    </div>
+                    <!-- <h5 class="text-white mb-2">Follow Us</h5> -->
+                    <div class="d-flex mt-2 pt-2">
+                        <a style="background-color: black;" class="btn btn-square  btn-outline-light btn-social" href=""><i class="bi bi-twitter-x"></i></a>
+                        <a style="background-color: blue;" class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light bg-white btn-social" href=""><i style="color: red;" class="fab fa-youtube"></i></a>
+                        <a style="background-color: blue;" class="btn  btn-square btn-outline-light btn-social" href=""><i  class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a class="btn" href="about.html">About Us</a>
+                    <a class="btn " href="subsidy.html">Subsidy</a>
+                    <a class="btn " href="product.html">Product</a>
+                    <a class="btn " href="channel.html"> Channel</a>
+                    <a class="btn " href="contact.html">Contact Us</a>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Project Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/gallery-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Other</h5>
+                    <a class="btn " href="on.html">On Grid Solar Power Plant</a>
+                    <a class="btn " href="off.html">Off Grid Solar Power Plant</a>
+                    <a class="btn " href="hybrid.html">Hybrid Solar Power Plants</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Address</h5>
+                    <p class="mb-2 text-white "><i class="fa fa-map-marker-alt me-3"></i>B-25-G-4/2369, St. No. 1, New Vishnupuri, New Shivpuri Road, Ludhiana-141007</p>
+                    <p class="mb-2 text-white"><i class="fa fa-phone-alt me-3"></i>+91 9216086981</p>
+                    <p class="mb-2 text-white"><i class="fa fa-phone-alt me-3"></i>+91 9914586981</p>
+
+                    <p class="text-white" ><i class="fa fa-envelope "></i> jyantienterprises@gmail.com</p>
+                   
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center text-md-center mb-3 mb-md-0" style="color: rgb(238, 223, 223);" >
+                        &copy; Copyright <a href="#">Jyanti Solar </a>, All Right Reserved.  Designed &
+                      
+                        Distributed By <a href="https://www.bhoomitechzone.in/" target="_blank">BTPL</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!---Whatapp integration-->
+
+<div class="whatsapp-icon " onclick="openWhatsAppChat()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
+
+  <!---Whatapp integration closed-->
+
+  <!-- call icon  start -->
+
+  <div class="whatsapp-icon" style="z-index: 1000; margin-bottom: 100px;">
+      <a href="tel:+91 92160 86981">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/702ed976-0c02-4182-b215-7f4bc64486f5/FoYiHtZPtH.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></dotlottie-player>
+      </a>
+</div>
+
+<!-- call icon end  -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square  rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- amar js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+
+        function openWhatsAppChat() {
+            // Replace with your phone number in international format
+            var phoneNumber = "919914586981";  // Example: 91 for India, followed by the number
+            var message = "Hello, I'm interested in your services!";
+            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+            window.open(url, "_blank");
+        }
+        
+            </script>
+
+</body>
+
+</html>
